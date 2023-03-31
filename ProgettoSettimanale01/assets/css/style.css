@@ -1,0 +1,150 @@
+body {
+    font-family: 'Open Sans', 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.65;
+    text-align: center;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: black;
+    padding: 20px;
+}
+
+#titolo1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding: 50px 70px 0px 70px;
+    line-height: 1.5;
+    color: #25a2c3;
+}
+
+.corpobody {
+    font-family: 'Open Sans';
+    font-weight: light;
+    padding: 0 70px;
+    color: #393d41;
+
+}
+
+#primoblocco {
+    height: 400px;
+    margin-top: -20px;
+    background-image: url('../img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+
+}
+
+#partiamo {
+    margin: 20px 0px 10px 0px;
+    background-color: #f04c2f;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 5px;
+    width: 130px;
+    height: 40px;
+    border: none;
+
+
+}
+
+#secondoblocco {
+    margin-top: -20px;
+    padding-top: 50px;
+}
+
+.sottotitoli {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #25a2c3;
+
+}
+
+#tonda {
+    border-radius: 500px;
+
+}
+
+#testimonianze {
+    background-color: #e22d0e;
+    box-sizing: content-box;
+}
+
+#titolotest {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    padding-top: 60px;
+}
+
+#testotest {
+    font-family: 'Open Sans';
+    font-style: italic;
+    color: white;
+}
+
+#mariorossi {
+    font-family: 'Open Sans';
+    color: white;
+    margin-bottom: -10px;
+}
+
+#ceo {
+    font-family: 'Open Sans';
+    color: white;
+    font-size: 0.7em;
+    padding-bottom: 50px;
+
+}
+
+
+.immaginischeda {
+    position: center;
+    margin-top: 70px;
+    margin-bottom: -10px;
+    
+}
+
+
+.scheda {
+    padding: 20px 50px;
+    margin: -20px auto;
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #dee1e3;
+    border-radius: 0 0px 5px 5px;
+
+}
+
+.titoloscheda {
+    font-family: 'Montserrat';
+    color: #25a2c3;
+    font-size: 0.8em;
+}
+
+.corposcheda {
+    font-family: 'Open Sans';
+    color: #393d41;
+    font-size: 0.8em;
+}
+
+#footer {
+    margin: 70px auto;
+    background-color: #53c1df;
+    box-sizing: border-box;
+}
+
+#Contattaci {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
