@@ -49,7 +49,7 @@ document.getElementById('quartoesercizio').innerHTML = x;
 
 var mionome = 'Marco';
 document.getElementById('quintoesercizio').innerHTML = mionome;
-var mionome = 'Tumminia';
+mionome = 'Tumminia';
 document.getElementById('quintoesercizio').innerHTML = mionome;
 
 /* Poichè il valore della variabile const è univocamente assegnata nel momento della definizione non è possibile assegnargli diversi valori dal primo definito */
@@ -58,7 +58,8 @@ document.getElementById('quintoesercizio').innerHTML = mionome;
 document.getElementById('sestoesercizio').innerHTML = numero1;
 
 numero1 = 4
-document.getElementById('sestoesercizio').innerHTML = numero1;*/
+document.getElementById('sestoesercizio').innerHTML = numero1;
+*/
 
 
 
@@ -87,4 +88,13 @@ else {
   document.getElementById('ottavoes').innerHTML = "false";
 }
 
+var name1 = 'john';
+var name2 = 'John';
+
+if (name1.toLowerCase == name2.toLowerCase) {
+  document.getElementById('ottavoes').innerHTML = "true";
+}
+else {
+  document.getElementById('ottavoes').innerHTML = "false";
+}
 
