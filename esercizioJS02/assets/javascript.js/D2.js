@@ -54,9 +54,11 @@ document.getElementById('quintoesercizio').innerHTML = mionome;
 
 /* Poichè il valore della variabile const è univocamente assegnata nel momento della definizione non è possibile assegnargli diversi valori dal primo definito */
 
+/* const numero1 = 15
+document.getElementById('sestoesercizio').innerHTML = numero1;
 
-
-
+numero1 = 4
+document.getElementById('sestoesercizio').innerHTML = numero1;*/
 
 
 
