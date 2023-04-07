@@ -17,7 +17,7 @@ console.log(pets);
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets" e stampa l'array ordinato in console.
 */
 
-pets.sort();
+pets.sort()
 console.log(pets);
 
 
