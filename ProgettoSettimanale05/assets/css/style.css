@@ -14,6 +14,10 @@ html body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #171717;
+  top: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
 }
 
 #hero {
@@ -60,159 +64,158 @@ h1 {
 }
 
 #testo-hero button {
-    background-color: #171717;
-    margin-top: 10px;
-    border-style: none;
-    border-radius: 50px;
-    color: white;
-    height: 25px;
-    width: 150px;
-
+  background-color: #171717;
+  margin-top: 10px;
+  border-style: none;
+  border-radius: 50px;
+  color: white;
+  height: 25px;
+  width: 150px;
 }
 
 #secondoContainer {
-    margin: 20px 0;
-    border-bottom: 1px solid #b8b8b8;
-    
+  margin: 20px 0;
+  border-bottom: 1px solid #b8b8b8;
 }
 
 #trending {
-    margin:0 100px;
-    display: flex;
-    align-items: center;
-    margin-bottom: -30px;
+  margin: 0 100px;
+  display: flex;
+  align-items: center;
+  margin-bottom: -30px;
 }
 
 #schede {
-    margin:0 100px;
-    display: flex;
-    flex-wrap: wrap;
+  margin: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 #scheda1 {
-    display: flex;
-    align-items: baseline;
-    width: 400px;    
+  display: flex;
+  align-items: baseline;
+  width: 400px;
 }
 
 #scheda1 div h2 {
-    position: relative;
-    top: 5px;
-    margin-right: 20px;
-    color: #efefef;
-    font-size: 2em;
+  position: relative;
+  top: 5px;
+  margin-right: 20px;
+  color: #efefef;
+  font-size: 2em;
 }
 
 #schede p {
-    color: #b8b8b8;
+  color: #b8b8b8;
 }
 
 #schede h3 {
-    font-weight: 700;
-    margin-bottom: -10px;
+  font-weight: 700;
+  margin-bottom: -10px;
 }
 
 #img-rotonda {
-    position: relative;
-    border-radius: 50%;
-    top: 3px;
+  position: relative;
+  border-radius: 50%;
+  top: 3px;
 }
 
-#articleContainer{
-    margin: 20px 100px;
-    display: flex;
-    justify-content: space-between;   
+#articleContainer {
+  margin: 20px 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
-#articleColumn{
-    display: flex;
-    flex-direction: column;
-    margin-right: 2em;
+#articleColumn {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2em;
 }
 
-.card{
-    display: flex;
-    width: 45em;
-    margin-bottom: 4em;
+.card {
+  display: flex;
+  width: 45em;
+  margin-bottom: 4em;
 }
 
-.articleSpace{
-    width: 30em;
-    margin-right: 1.5em;
+.articleSpace {
+  width: 30em;
+  margin-right: 1.5em;
 }
 
-.imgArticle{
-    border-radius: 25px;
-    overflow: hidden;
-    margin-right: 0.5em;
+.imgArticle {
+  border-radius: 25px;
+  overflow: hidden;
+  margin-right: 0.5em;
 }
 
-.title{
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
+.title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
-.description{
-    color: rgb(176, 176, 176);
-    margin-bottom: 1.2em;
+.description {
+  color: rgb(176, 176, 176);
+  margin-bottom: 1.2em;
 }
 
-.date{
-    color: rgb(176, 176, 176);
-    font-size: 0.8em;
+.date {
+  color: rgb(176, 176, 176);
+  font-size: 0.8em;
 }
 
-.sideImg{
-    width: 15em;
+.sideImg {
+  width: 15em;
 }
 
-.dateSpace{
-    display: flex;
-    justify-content: space-between;
+.dateSpace {
+  display: flex;
+  justify-content: space-between;
 }
 
-#discoverMore{
-    width: 25em;
+#discoverMore {
+  width: 25em;
+  
 }
 
-#titleAside{
-    font-weight: 500;
-    font-size: 80%;
-    margin-bottom: 1em;
+#titleAside {
+  font-weight: 500;
+  font-size: 80%;
+  margin-bottom: 1em;
 }
 
-#containerAside{
-    margin-bottom: 1em;
-    border-bottom: 1px solid rgb(229, 229, 229);
+#containerAside {
+  margin-bottom: 1em;
+  border-bottom: 1px solid rgb(229, 229, 229);
 }
 
-#tags{
-    padding: 0.5em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#tags {
+  padding: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.tag{
-    text-decoration: none;
-    color: black;
-    border: 1px solid #efefef;
-    width: fit-content;
-    font-size: 0.9em;
-    padding: 1em;
-    margin-bottom: 0.5em;
+.tag {
+  text-decoration: none;
+  color: black;
+  border: 1px solid #efefef;
+  width: fit-content;
+  font-size: 0.9em;
+  padding: 1em;
+  margin-bottom: 0.5em;
 }
 
-#help{
-    display: flex;
-    flex-wrap: wrap;
+#help {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.helpTag{
-    margin-right: 1em;
-    margin-bottom: 1em;
-    color: rgb(176, 176, 176);
-    text-decoration: none;
-    font-size: 80%;
+.helpTag {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: rgb(176, 176, 176);
+  text-decoration: none;
+  font-size: 80%;
 }
