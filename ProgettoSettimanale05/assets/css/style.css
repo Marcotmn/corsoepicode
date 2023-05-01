@@ -213,8 +213,9 @@ h1 {
 
 #titleAside {
   font-weight: 500;
-  font-size: 80%;
+  font-size: 90%;
   margin-bottom: 1em;
+  font-weight: 700;
 }
 
 #containerAside {
@@ -231,8 +232,9 @@ h1 {
 
 .tag {
   text-decoration: none;
+  border-radius: 50px;
+  background-color: #f5f5f5;
   color: black;
-  border: 1px solid #efefef;
   width: fit-content;
   font-size: 0.9em;
   padding: 1em;
@@ -250,4 +252,11 @@ h1 {
   color: rgb(176, 176, 176);
   text-decoration: none;
   font-size: 80%;
+}
+
+#seeMore {
+  text-decoration: none;
+  color: rgb(0, 169, 0);
+  font-size: 90%;
+
 }
