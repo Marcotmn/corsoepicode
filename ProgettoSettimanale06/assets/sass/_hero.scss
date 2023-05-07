@@ -1,0 +1,32 @@
+#hero {
+    background-color: $mainColor;
+    color: $fourthColor;
+    font-family: $fontStack;
+
+}
+
+#titoloHero {
+    font-weight: $fontWeight3;
+    font-size: 40px;
+}
+
+#paragrafoHero {
+    font-weight: $fontWeight1;
+    color: $fifthColor;
+    font-size: 18px;
+}
+
+.heroB1 {
+    background-color: $secondaryColor;
+    border-radius: $borderButton;
+    padding: $paddingButton;
+    border-style: $buttonBorderstyle;
+    color: $fourthColor;
+}
+
+.heroB2 {
+    background-color: $thirdColor;
+    border-radius: $borderButton;
+    padding: $paddingButton;
+    border-style: $buttonBorderstyle;
+}

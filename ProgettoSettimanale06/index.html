@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/miosass.css">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid my-sm-3 my-lg-0 ms-2">
+          <a class="navbar-brand" href="#"> <img src="assets/img/logo.svg" width="40"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!--Browse-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Browse
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+               <!--Landings-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Landings
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+               <!--Pages-->
+               <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!--Accounts-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Accounts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!--Notifica e Profilo-->
+            <div class="d-flex">
+                <button class="btn rounded-circle bg-light position-relative me-3">
+                    <span class="position-absolute top-5 start-100 translate-middle p-2 bg-danger border border-white rounded-circle"></span>
+                    <i class="bi bi-bell"></i></button>
+
+                    <div class="dropdown ms-1 ms-lg-0">
+                        <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img class="avatar-img rounded-circle" src="assets/img/avatar-1.jpg" alt="avatar" width="40px">
+                        </a>
+                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown" id="dropDownProfile">
+                            <!-- Profilo -->
+                            <li class="px-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <!-- Avatar -->
+                                    <div class="avatar me-3">
+                                        <img class="avatar-img rounded-circle" src="assets/img/avatar-1.jpg" alt="avatar" width="40">
+                                    </div>
+                                    <div>
+                                        <a class="h6 text-decoration-none" >Jenny Wilson</a>
+                                        <p class="small m-0 text-secondary">example@gmail.com</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <hr class="dropdown-divider"></li>
+                            <!-- Links -->
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person fa-fw me-2"></i>Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-star me-2"></i></i>Subscription</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Setting</a></li>
+                            <li> <hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+      </nav>
+
+
+
+    <!--hero parte1-->
+
+ <div class="container-fluid row align-items-center mx-0" id="hero" >
+
+    <div class="col-lg-6 text-center text-sm-start p-5">
+        
+
+        <h1 id="titoloHero">Welcome Web Students!</h1>
+        <p id="paragrafoHero">Hand-picked instructor and expertly crafted courses, designed for the modern students and entrepreneur.</p>
+        <button type="button" class="heroB1"> Browse Courses</button>
+        <button type="button" class="heroB2"> Are You Instructor?</button>
+
+    </div>
+
+    <div class="col-lg-6 text-center">
+        <img src="assets/img/hero-img.png" class="img-fluid" width="">
+    </div>
+
+ </div>
+
+  <!--hero parte2-->
+
+<div class="container-fluid bg-white py-sm-5  py-lg-3">
+  <div class="row ms-3">
+
+    <div class="col-sm-12 col-lg-4">
+        <div class="d-flex justify-content-center justify-content-sm-start ms-sm-3 align-items-center">
+            <span class="display-6"><i class="bi bi-camera-video"></i></span>
+             <div class="ms-3">
+               <h5 class="mt-3 mb-0">30,000 online courses</h5>
+               <p class="text-secondary">Enjoy a variety of fresh topics</p>
+             </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-lg-4">
+        <div class="d-flex justify-content-center justify-content-sm-start ms-sm-3 align-items-center">
+            <span class="display-6"><i class="bi bi-people"></i></span>
+             <div class="ms-3">
+               <h5 class="mt-3 mb-0">Expert instructor</h5>
+               <p class="text-secondary">Find the right instructor for you</p>
+             </div>
+        </div>
+    </div>
+
+    <div class="col-sm-12 col-lg-4">
+        <div class="d-flex justify-content-center justify-content-sm-start ms-sm-3 align-items-center">
+            <span class="display-6"><i class="bi bi-clock"></i></span>
+             <div class="ms-3">
+               <h5 class="mt-3 mb-0">Lifetime access</h5>
+               <p class="text-secondary">Learn on your schedule</p>
+             </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!--section-->
+
+ <section class="bg-light ps-lg-3">
+      <!--Raccomandati-->
+    <div class="container">
+        <h3 class="mb-4 pt-5">Reccomanded to you</h3>
+
+    <!--Riga schede raccomandati-->
+        <div class="row mb-5 justify-content-around">
+            <!--colonna1-->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card" style="width: 250px">
+                <!--Immagine card-->
+                <img src="assets/img/course-graphql.jpg" class="card-img-top" alt="img-corso">
+                <!--Card body-->
+                <div class="card-body">
+                    <!--Titolo-->
+                  <h6 class="card-title mb-3">GraphQL: introduction to GraphQL for beginners</h5>
+                  <div class="d-flex justify-content-start mb-3">
+                    <!--Durata corso e difficoltà-->
+                    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>2h 40m</span>
+                    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+                </div>
+
+                <!--Recensioni-->
+                  <ul class="list-inline mb-3">
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">2.5 <span class="text-secondary small">(1,500)</span></li>
+                  </ul>
+                <!--Prezzo card-->
+                <div class="d-flex justify-content-start align-items-center mb-0">
+                 <p class="me-1"><b>$500</b></p><p class="small text-secondary"><del>$600</p>
+                </div>
+                <!--Footer card-->
+                <hr>
+                <div class="d-flex align-items-center justify-content-start">
+                <img class="rounded-circle me-2" width="25" src="assets/img/avatar-5.jpg">
+                <p class="small text-secondary me-4 mt-3">Brooklyn Simmons</p>
+                <i class="bi bi-bookmark text-secondary ms-3"></i>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!--colonna2-->
+           <div class="col-sm-6 col-lg-3">
+            <div class="card" style="width: 250px;">
+            <!--Immagine card-->
+            <img src="assets/img/course-javascript.jpg" class="card-img-top" alt="img-corso">
+            <!--Card body-->
+            <div class="card-body">
+                <!--Titolo-->
+              <h6 class="card-title mb-3">A Complete Beginner's Guide To javascript</h5>
+              <div class="d-flex justify-content-start mb-3">
+                <!--Durata corso e difficoltà-->
+                <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>4h 10m</span>
+                <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+            </div>
+
+            <!--Recensioni-->
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">3.5 <span class="text-secondary small">(7,500)</span></li>
+              </ul>
+            <!--Prezzo card-->
+            <div class="d-flex justify-content-start align-items-center mb-0">
+             <p class="me-1"><b>$700</b></p><p class="small text-secondary"><del>$850</p>
+            </div>
+            <!--Footer card-->
+            <hr>
+            <div class="d-flex align-items-center justify-content-start">
+            <img class="rounded-circle me-2" width="25" src="assets/img/avatar-1.jpg">
+            <p class="small text-secondary me-4 mt-3">Jenny Wilson</p>
+            <i class="bi bi-bookmark text-secondary"></i>
+        </div>
+            </div>
+          </div>
+        </div>
+
+
+            <!--colonna3-->
+            <div class="col-sm-6 col-lg-3 d-sm-none d-lg-inline">
+                <div class="card" style="width: 250px;">
+                <!--Immagine card-->
+                <img src="assets/img/course-node.jpg" class="card-img-top" alt="img-corso">
+                <!--Card body-->
+                <div class="card-body">
+                    <!--Titolo-->
+                  <h6 class="card-title mb-3">Beginning Node.js, Express & MongoDB Development</h5>
+                  <div class="d-flex justify-content-start mb-3">
+                    <!--Durata corso e difficoltà-->
+                    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>2h 00m</span>
+                    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+                </div>
+
+                <!--Recensioni-->
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">4.0 <span class="text-secondary small">(15,700)</span></li>
+                  </ul>
+                <!--Prezzo card-->
+                <div class="d-flex justify-content-start align-items-center mb-0">
+                 <p class="me-1"><b>$800</b></p><p class="small text-secondary"><del>$950</p>
+                </div>
+                <!--Footer card-->
+                <hr>
+                <div class="d-flex align-items-center justify-content-start">
+                <img class="rounded-circle me-2" width="25" src="assets/img/avatar-3.jpg">
+                <p class="small text-secondary me-4 mt-3">Sina Ray</p>
+                <i class="bi bi-bookmark text-secondary"></i>
+            </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--colonna4-->
+            <div class="col-sm-6 col-lg-3 d-sm-none d-lg-inline">
+                <div class="card" style="width: 250px;">
+                <!--Immagine card-->
+                <img src="assets/img/course-laravel.jpg" class="card-img-top" alt="img-corso">
+                <!--Card body-->
+                <div class="card-body">
+                    <!--Titolo-->
+                  <h6 class="card-title mb-3">Laravel: The Ultimate Beginner's Guide to Learn</h5>
+                  <div class="d-flex justify-content-start mb-3">
+                    <!--Durata corso e difficoltà-->
+                    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>1h 00m</span>
+                    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+                </div>
+
+                <!--Recensioni-->
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+                    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">3.5 <span class="text-secondary small">(2,500)</span></li>
+                  </ul>
+                <!--Prezzo card-->
+                <div class="d-flex justify-content-start align-items-center mb-0">
+                 <p class="me-1"><b>$170</b></p><p class="small text-secondary"><del>$220</p>
+                </div>
+                <!--Footer card-->
+                <hr>
+                <div class="d-flex align-items-center justify-content-start">
+                <img class="rounded-circle me-2" width="25" src="assets/img/avatar-7.jpg">
+                <p class="small text-secondary me-4 mt-3">Sobo Rikhan</p>
+                <i class="bi bi-bookmark text-secondary"></i>
+            </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+  <!--popolari-->
+    <div class="container">
+        <h3 class="mb-4 pt-5">Most Popular</h3>
+
+    <!--Riga schede-->
+        <div class="row mb-5">
+            <!--colonna1-->
+            <!--colonna1-->
+            <div class="col-sm-6 col-lg-3">
+                <div class="card" style="width: 250px">
+                <!--Immagine card-->
+                <img src="assets/img/course-graphql.jpg" class="card-img-top" alt="img-corso">
+                <!--Card body-->
+                <div class="card-body">
+                    <!--Titolo-->
+                  <h6 class="card-title mb-3">GraphQL: introduction to GraphQL for beginners</h5>
+                  <div class="d-flex justify-content-start mb-3">
+                    <!--Durata corso e difficoltà-->
+                    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>2h 40m</span>
+                    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+                </div>
+
+                <!--Recensioni-->
+                  <ul class="list-inline mb-3">
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">2.5 <span class="text-secondary small">(1,500)</span></li>
+                  </ul>
+                <!--Prezzo card-->
+                <div class="d-flex justify-content-start align-items-center mb-0">
+                 <p class="me-1"><b>$500</b></p><p class="small text-secondary"><del>$600</p>
+                </div>
+                <!--Footer card-->
+                <hr>
+                <div class="d-flex align-items-center justify-content-start">
+                <img class="rounded-circle me-2" width="25" src="assets/img/avatar-5.jpg">
+                <p class="small text-secondary me-4 mt-3">Brooklyn Simmons</p>
+                <i class="bi bi-bookmark text-secondary ms-3"></i>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!--colonna2-->
+           <div class="col-sm-6 col-lg-3">
+            <div class="card" style="width: 250px;">
+            <!--Immagine card-->
+            <img src="assets/img/course-javascript.jpg" class="card-img-top" alt="img-corso">
+            <!--Card body-->
+            <div class="card-body">
+                <!--Titolo-->
+              <h6 class="card-title mb-3">A Complete Beginner's Guide To javascript</h5>
+              <div class="d-flex justify-content-start mb-3">
+                <!--Durata corso e difficoltà-->
+                <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>4h 10m</span>
+                <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+            </div>
+
+            <!--Recensioni-->
+            <ul class="list-inline mb-3">
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+                <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">3.5 <span class="text-secondary small">(7,500)</span></li>
+              </ul>
+            <!--Prezzo card-->
+            <div class="d-flex justify-content-start align-items-center mb-0">
+             <p class="me-1"><b>$700</b></p><p class="small text-secondary"><del>$850</p>
+            </div>
+            <!--Footer card-->
+            <hr>
+            <div class="d-flex align-items-center justify-content-start">
+            <img class="rounded-circle me-2" width="25" src="assets/img/avatar-1.jpg">
+            <p class="small text-secondary me-4 mt-3">Jenny Wilson</p>
+            <i class="bi bi-bookmark text-secondary"></i>
+        </div>
+            </div>
+          </div>
+        </div>
+
+
+            <!--colonna3-->
+            <div class="col-sm-6 col-lg-3 d-sm-none d-lg-inline">
+                <div class="card" style="width: 250px;">
+                <!--Immagine card-->
+                <img src="assets/img/course-node.jpg" class="card-img-top" alt="img-corso">
+                <!--Card body-->
+                <div class="card-body">
+                    <!--Titolo-->
+                  <h6 class="card-title mb-3">Beginning Node.js, Express & MongoDB Development</h5>
+                  <div class="d-flex justify-content-start mb-3">
+                    <!--Durata corso e difficoltà-->
+                    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>2h 00m</span>
+                    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+                </div>
+
+                <!--Recensioni-->
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+                    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">4.0 <span class="text-secondary small">(15,700)</span></li>
+                  </ul>
+                <!--Prezzo card-->
+                <div class="d-flex justify-content-start align-items-center mb-0">
+                 <p class="me-1"><b>$800</b></p><p class="small text-secondary"><del>$950</p>
+                </div>
+                <!--Footer card-->
+                <hr>
+                <div class="d-flex align-items-center justify-content-start">
+                <img class="rounded-circle me-2" width="25" src="assets/img/avatar-3.jpg">
+                <p class="small text-secondary me-4 mt-3">Sina Ray</p>
+                <i class="bi bi-bookmark text-secondary"></i>
+            </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!--colonna4-->
+            <div class="col-sm-6 col-lg-3 d-sm-none d-lg-inline">
+                <div class="card" style="width: 250px;">
+                <!--Immagine card-->
+                <img src="assets/img/course-laravel.jpg" class="card-img-top" alt="img-corso">
+                <!--Card body-->
+                <div class="card-body">
+                    <!--Titolo-->
+                  <h6 class="card-title mb-3">Laravel: The Ultimate Beginner's Guide to Learn</h5>
+                  <div class="d-flex justify-content-start mb-3">
+                    <!--Durata corso e difficoltà-->
+                    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>1h 00m</span>
+                    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+                </div>
+
+                <!--Recensioni-->
+                <ul class="list-inline mb-3">
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+                    <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+                    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">3.5 <span class="text-secondary small">(2,500)</span></li>
+                  </ul>
+                <!--Prezzo card-->
+                <div class="d-flex justify-content-start align-items-center mb-0">
+                 <p class="me-1"><b>$170</b></p><p class="small text-secondary"><del>$220</p>
+                </div>
+                <!--Footer card-->
+                <hr>
+                <div class="d-flex align-items-center justify-content-start">
+                <img class="rounded-circle me-2" width="25" src="assets/img/avatar-7.jpg">
+                <p class="small text-secondary me-4 mt-3">Sobo Rikhan</p>
+                <i class="bi bi-bookmark text-secondary"></i>
+            </div>
+                </div>
+              </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+  <!--trending-->
+    <div class="container">
+        <h3 class="mb-4 pt-5">Trending</h3>
+
+    <!--Riga schede-->
+        <div class="row">
+            <!--colonna1-->
+<!--colonna1-->
+<div class="col-sm-6 col-lg-3 mb-5">
+    <div class="card" style="width: 250px">
+    <!--Immagine card-->
+    <img src="assets/img/course-graphql.jpg" class="card-img-top" alt="img-corso">
+    <!--Card body-->
+    <div class="card-body">
+        <!--Titolo-->
+      <h6 class="card-title mb-3">GraphQL: introduction to GraphQL for beginners</h5>
+      <div class="d-flex justify-content-start mb-3">
+        <!--Durata corso e difficoltà-->
+        <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>2h 40m</span>
+        <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+    </div>
+
+    <!--Recensioni-->
+      <ul class="list-inline mb-3">
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+        <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">2.5 <span class="text-secondary small">(1,500)</span></li>
+      </ul>
+    <!--Prezzo card-->
+    <div class="d-flex justify-content-start align-items-center mb-0">
+     <p class="me-1"><b>$500</b></p><p class="small text-secondary"><del>$600</p>
+    </div>
+    <!--Footer card-->
+    <hr>
+    <div class="d-flex align-items-center justify-content-start">
+    <img class="rounded-circle me-2" width="25" src="assets/img/avatar-5.jpg">
+    <p class="small text-secondary me-4 mt-3">Brooklyn Simmons</p>
+    <i class="bi bi-bookmark text-secondary ms-3"></i>
+    </div>
+    </div>
+  </div>
+</div>
+
+<!--colonna2-->
+<div class="col-sm-6 col-lg-3">
+<div class="card" style="width: 250px;">
+<!--Immagine card-->
+<img src="assets/img/course-javascript.jpg" class="card-img-top" alt="img-corso">
+<!--Card body-->
+<div class="card-body">
+    <!--Titolo-->
+  <h6 class="card-title mb-3">A Complete Beginner's Guide To javascript</h5>
+  <div class="d-flex justify-content-start mb-3">
+    <!--Durata corso e difficoltà-->
+    <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>4h 10m</span>
+    <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+</div>
+
+<!--Recensioni-->
+<ul class="list-inline mb-3">
+    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+    <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+    <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+    <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+    <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">3.5 <span class="text-secondary small">(7,500)</span></li>
+  </ul>
+<!--Prezzo card-->
+<div class="d-flex justify-content-start align-items-center mb-0">
+ <p class="me-1"><b>$700</b></p><p class="small text-secondary"><del>$850</p>
+</div>
+<!--Footer card-->
+<hr>
+<div class="d-flex align-items-center justify-content-start">
+<img class="rounded-circle me-2" width="25" src="assets/img/avatar-1.jpg">
+<p class="small text-secondary me-4 mt-3">Jenny Wilson</p>
+<i class="bi bi-bookmark text-secondary"></i>
+</div>
+</div>
+</div>
+</div>
+
+
+<!--colonna3-->
+<div class="col-sm-6 col-lg-3 d-sm-none d-lg-inline">
+    <div class="card" style="width: 250px;">
+    <!--Immagine card-->
+    <img src="assets/img/course-node.jpg" class="card-img-top" alt="img-corso">
+    <!--Card body-->
+    <div class="card-body">
+        <!--Titolo-->
+      <h6 class="card-title mb-3">Beginning Node.js, Express & MongoDB Development</h5>
+      <div class="d-flex justify-content-start mb-3">
+        <!--Durata corso e difficoltà-->
+        <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>2h 00m</span>
+        <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+    </div>
+
+    <!--Recensioni-->
+    <ul class="list-inline mb-3">
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star text-warning"></i></li>
+        <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">4.0 <span class="text-secondary small">(15,700)</span></li>
+      </ul>
+    <!--Prezzo card-->
+    <div class="d-flex justify-content-start align-items-center mb-0">
+     <p class="me-1"><b>$800</b></p><p class="small text-secondary"><del>$950</p>
+    </div>
+    <!--Footer card-->
+    <hr>
+    <div class="d-flex align-items-center justify-content-start">
+    <img class="rounded-circle me-2" width="25" src="assets/img/avatar-3.jpg">
+    <p class="small text-secondary me-4 mt-3">Sina Ray</p>
+    <i class="bi bi-bookmark text-secondary"></i>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<!--colonna4-->
+<div class="col-sm-6 col-lg-3 d-sm-none d-lg-inline">
+    <div class="card" style="width: 250px;">
+    <!--Immagine card-->
+    <img src="assets/img/course-laravel.jpg" class="card-img-top" alt="img-corso">
+    <!--Card body-->
+    <div class="card-body">
+        <!--Titolo-->
+      <h6 class="card-title mb-3">Laravel: The Ultimate Beginner's Guide to Learn</h5>
+      <div class="d-flex justify-content-start mb-3">
+        <!--Durata corso e difficoltà-->
+        <span class="h6 fw-light mb-0 me-3"><i class="bi bi-clock me-1"></i></i>1h 00m</span>
+        <span class="h6 fw-light mb-0"><i class="bi bi-reception-4 me-1" id="network"></i></i>Advance</span>
+    </div>
+
+    <!--Recensioni-->
+    <ul class="list-inline mb-3">
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-fill text-warning"></i></li>
+        <li class="list-inline-item me-0 small"><i class="bi bi-star-half text-warning"></i></li>
+        <li class="list-inline-item ms-2 h6 fw-light mb-0 text-warning">3.5 <span class="text-secondary small">(2,500)</span></li>
+      </ul>
+    <!--Prezzo card-->
+    <div class="d-flex justify-content-start align-items-center mb-0">
+     <p class="me-1"><b>$170</b></p><p class="small text-secondary"><del>$220</p>
+    </div>
+    <!--Footer card-->
+    <hr>
+    <div class="d-flex align-items-center justify-content-start">
+    <img class="rounded-circle me-2" width="25" src="assets/img/avatar-7.jpg">
+    <p class="small text-secondary me-4 mt-3">Sobo Rikhan</p>
+    <i class="bi bi-bookmark text-secondary"></i>
+</div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+
+</div>
+
+
+  </section>
+
+  <!--footer-->
+
+  <footer>
+   <hr class="m-0">
+    <div class="container-fluid row bg-light ps-5 pe-4">
+
+        <div class="col-sm-12 col-lg-6 text-sm-center text-lg-start mt-2">
+            <p class="small">© 2022 Geeks. All Rights Reserved</p>
+        </div>
+
+        <div class="col-sm-12 col-lg-6 mt-lg-2">
+            <div class="d-flex justify-content-sm-center justify-content-lg-end">
+            <p class="me-4 small">Privacy</p>
+            <p class="me-4 small">Terms</p>
+            <p class="me-4 small">Feedback</p>
+            <p class="small">Support</p></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    </div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script></div>
+
+</body>
+</html>

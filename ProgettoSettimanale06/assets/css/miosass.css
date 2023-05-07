@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+#hero {
+  background-color: rgb(113, 18, 255);
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+#titoloHero {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+#paragrafoHero {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.469);
+  font-size: 18px;
+}
+
+.heroB1 {
+  background-color: rgb(15, 208, 131);
+  border-radius: 5px;
+  padding: 10px;
+  border-style: none;
+  color: white;
+}
+
+.heroB2 {
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
+  padding: 10px;
+  border-style: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: rgb(242, 242, 242);
+}
+
+#network {
+  color: rgb(113, 18, 255);
+}
+
+#dropDownProfile {
+  border-style: none;
+}/*# sourceMappingURL=miosass.css.map */
