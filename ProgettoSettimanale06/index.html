@@ -72,7 +72,7 @@
             <!--Notifica e Profilo-->
             <div class="d-flex">
                 <button class="btn rounded-circle bg-light position-relative me-3">
-                    <span class="position-absolute top-5 start-100 translate-middle p-2 bg-danger border border-white rounded-circle"></span>
+                    <span class="position-absolute top-5 start-100 translate-middle p-2 rounded-circle" id="notify"></span>
                     <i class="bi bi-bell"></i></button>
 
                     <div class="dropdown ms-1 ms-lg-0">
@@ -83,7 +83,7 @@
                             <!-- Profilo -->
                             <li class="px-3 mb-3">
                                 <div class="d-flex align-items-center">
-                                    <!-- Avatar -->
+                                    <!-- Avatar e dropdown: non sono riuscito a far apparire il dropd dentro lo schermo se aperto su sm da menù-->
                                     <div class="avatar me-3">
                                         <img class="avatar-img rounded-circle" src="assets/img/avatar-1.jpg" alt="avatar" width="40">
                                     </div>
@@ -203,7 +203,7 @@
                 <div class="d-flex justify-content-start align-items-center mb-0">
                  <p class="me-1"><b>$500</b></p><p class="small text-secondary"><del>$600</p>
                 </div>
-                <!--Footer card-->
+                <!--Footer card ho inserito il footer nel div sbagliato, se lo sposto sotto di un /div l'hr copre tutta la width della scheda-->
                 <hr>
                 <div class="d-flex align-items-center justify-content-start">
                 <img class="rounded-circle me-2" width="25" src="assets/img/avatar-5.jpg">
