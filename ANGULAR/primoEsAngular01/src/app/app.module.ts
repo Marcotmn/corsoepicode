@@ -11,7 +11,7 @@ import { TerzoComponent } from './terzo/terzo.component';
     AppComponent,
     PrimoComponent,
     SecondoComponent,
-    TerzoComponent
+    TerzoComponent,
   ],
   imports: [
     BrowserModule

@@ -1,0 +1,8 @@
+<p>
+  <input type="text" class="form-control" [(ngModel)]="name" />
+  <!-- Il campo di input collega il suo valore a una variabile presente nel ts attraverso la direttiva [(ngModel)]-->
+  <button type="button" class="btn btn-primary mt-2" (click)="newUser(name)">
+    Invia
+  </button>
+  <!--il button invia il valore collegato al metodo presente nel ts-->
+</p>
