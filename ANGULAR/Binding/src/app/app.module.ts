@@ -5,12 +5,14 @@ import { FormsModule } from '@angular/forms'; //importa FormsModule per consenti
 import { AppComponent } from './app.component';
 import { NewUserComponent } from './components/new-user/new-user.component';
 import { UsersComponent } from './components/users/users.component';
+import { CComponent } from './components/c/c.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewUserComponent,
     UsersComponent,
+    CComponent,
   ],
   imports: [
     BrowserModule,
