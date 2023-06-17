@@ -1,0 +1,29 @@
+<div class="container mt-5" *ngIf="!user">
+  <div class="text-center">
+    <h1 class="text-danger">Devi effettuare il <a [routerLink]="['/login']">login</a> per visualizare la lista dei film </h1>
+  </div>
+</div>
+<div *ngIf="user">
+  <h2 class="text-center my-4">Ultime uscite</h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-3" *ngFor="let movie of movies">
+        <div class="text-center">
+          <span *ngIf="!movies" class="spinner-border"></span>
+          <ul class="list-group" *ngIf="movies">
+            <li class="list-group-item">
+              Titolo: {{ movie.title }}
+              <img
+                src="http://image.tmdb.org/t/p/w500{{ movie.poster_path }}"
+                class="card-img-top"
+                alt="{{ movie.title }}"
+              />
+              ID: {{ movie.id }}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

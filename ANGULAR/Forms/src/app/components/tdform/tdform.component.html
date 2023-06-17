@@ -1,0 +1,109 @@
+<div class="container">
+  <h1 class="text-center">TD</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div>
+          <form (ngSubmit)="submitForm()" #contenitoreForm="ngForm">
+            <div
+              ngModelGroup="heroInfo"
+              id="heroInfo"
+              #heroGroup="ngModelGroup"
+            >
+              <div class="form-group">
+                <label for="SupName">Nome</label>
+                <input
+                  type="text"
+                  id="SupName"
+                  [ngModel]="superHero.defSupName"
+                  name="SupName"
+                  class="form-control"
+                  required
+                />
+                <p *ngIf="heroGroup.invalid && heroGroup.touched">
+                  <strong>Campo obbligatorio</strong>
+                </p>
+              </div>
+              <div class="form-group">
+                <label for="alterEgo">AlterEgo</label>
+                <input
+                  type="text"
+                  id="alterEgo"
+                  name="alterEgo"
+                  [ngModel]="superHero.alterEgo"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <p *ngIf="heroGroup.invalid && heroGroup.touched">
+                <strong>Campo obbligatorio</strong>
+              </p>
+              <div class="form-group">
+                <label for="power">Potere</label>
+                <select
+                  name="power"
+                  id="power"
+                  class="form-select"
+                  [ngModel]="superHero.choose"
+                  required
+                >
+                  <option value=""></option>
+                  <option value="superforza">SuperForza</option>
+                  <option value="supersalto">SuperSalto</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="enemy">Nemico</label>
+                <input
+                  type="text"
+                  id="enemy"
+                  [ngModel]="superHero.enemy"
+                  name="enemy"
+                  class="form-control"
+                  maxlength="10"
+                  required
+                />
+                <p *ngIf="heroGroup.invalid && heroGroup.touched">
+                  <strong>Campo obbligatorio</strong>
+                </p>
+              </div>
+              <div class="form-group">
+                <label for="planet">Pianeta</label>
+                <input
+                  type="text"
+                  id="planet"
+                  [ngModel]="superHero.planet"
+                  name="planet"
+                  class="form-control"
+                  minlength="5"
+                  required
+                />
+                <p *ngIf="heroGroup.invalid && heroGroup.touched">
+                  <strong>Campo obbligatorio</strong>
+                </p>
+              </div>
+              <div class="form-group">
+                <label for="weakness">Debolezza</label>
+                <input
+                  type="text"
+                  id="weakness"
+                  [ngModel]="superHero.weakness"
+                  name="weakness"
+                  class="form-control"
+                  required
+                />
+                <button
+                  type="submit"
+                  class="btn btn-primary mt-3"
+                  [disabled]="contenitoreForm.invalid"
+                >
+                  Invia
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

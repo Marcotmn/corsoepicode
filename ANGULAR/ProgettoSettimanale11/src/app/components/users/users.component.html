@@ -1,0 +1,17 @@
+<h1 class="text-center my-4">Lista utenti</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      
+      <div class="text-center" *ngIf="!users">
+        <span class="spinner-border"></span>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let user of users">
+          <button type="button" class="me-2" id="elimina" name="elimina"  (click)="cancella(user.id)">X</button>
+          Nome: {{user.name}} <br> Email: {{user.email}} <br> id {{user.id}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

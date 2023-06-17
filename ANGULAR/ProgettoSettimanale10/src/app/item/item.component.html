@@ -1,0 +1,31 @@
+<div class="item">
+  <input
+    [id]="item.titolo"
+    type="checkbox"
+    (change)="item.done = !item.done"
+    [checked]="item.done"
+  />
+  <label [for]="item.titolo">{{ item.titolo }}</label>
+
+  <div class="btn-wrapper" *ngIf="!editable">
+    <button class="btn" (click)="editable = !editable">Modifica</button>
+    <button class="btn btn-warn" (click)="remove.emit()">Cancella</button>
+  </div>
+
+  <div *ngIf="editable">
+    <input
+      class="sm-text-input"
+      placeholder="Modifica"
+      [value]="item.title"
+      #editedItem
+      (keyup.enter)="saveItem(editedItem.value)"
+    />
+
+    <div class="btn-wrapper">
+      <button class="btn" (click)="editable = !editable">Cancella</button>
+      <button class="btn btn-save" (click)="saveItem(editedItem.value)">
+        Salva
+      </button>
+    </div>
+  </div>
+</div>

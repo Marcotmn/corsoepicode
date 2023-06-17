@@ -1,0 +1,17 @@
+<div class="container text-center mt-5">
+  <div *ngIf="!user">
+    <h1>MOVIE STREAM</h1>
+    <hr/>
+  <h3>Benvenuto nella nostra piattaforma di streaming video!</h3>
+  <h3>
+    Per usufruire dei nostri servizi effettua il
+    <a [routerLink]="['/home/login']">login</a> oppure
+    <a [routerLink]="['/home/registrazione']">registrati</a>
+  </h3>
+</div>
+<div *ngIf="user">
+  <app-movies></app-movies>
+</div>
+</div>
+
+<router-outlet></router-outlet>
