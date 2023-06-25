@@ -11,14 +11,12 @@ REGOLE
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato..
 */
 
-/* var l1=5
-var l2=10
-
-function area() {
-    let areaRett = l1 * l2;
-    return areaRett;
+function area(l1, l2) {
+  return l1 * l2;
 }
-document.getElementById("esuno").innerHTML = area();*/
+
+let areaRett = area(5, 6);
+console.log(areaRett);
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
@@ -26,57 +24,47 @@ document.getElementById("esuno").innerHTML = area();*/
  la loro somma moltiplicata per tre.
 */
 
-
-/* var num1 = 5
-var num2 = 10
-
-function crazySum () {
-    if (num1 === num2) {
-        return (num1 + num2) * 3;
-    } else {
-        return (num1 + num2);
-    }
+function crazySum(l3, l4) {
+  if (l3 == l4) {
+    return (l3 + l4) * 3;
+  } else {
+    return l3 + l4;
+  }
 }
-    
-document.getElementById("esdue").innerHTML = crazySum(); */
 
-/*
-
+console.log(crazySum(8, 8));
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-
-/* var num = 15
-
-function crazyDiff() {
-    const diff = Math.abs(num - 19);
-    
-    if (num > 19) {
-        return diff * 3
-    } else {
-        return diff;
-    }
+function crazyDiff(x) {
+  if (x > 19) {
+    return Math.abs((x - 19) * 3);
+  } else {
+    return Math.abs(x - 19);
+  }
 }
 
-document.getElementById("estre").innerHTML = crazyDiff(); */
+console.log(crazyDiff(25, 19));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
  se n è uguale a 400.
 */
 
-
-/* var n = 50
-
-function boundary () {
-   return (n > 20 && n < 100 || n === 400);
+function boundary(n) {
+  if ((20 <= n && n <= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
-document.getElementById("esquattro").innerHTML = boundary();*/
+console.log(boundary(50));
 
+/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
@@ -84,70 +72,85 @@ document.getElementById("esquattro").innerHTML = boundary();*/
  ritornare la stringa originale senza alterarla.
 */
 
+let str = " è un corso di formazione per developer";
 
-/* var string = "EPICODE ti insegna JavaScript"
-
-function epify() {
-    if (string.startsWith('EPICODE')) {
-        return string;
-    } else {
-        return "EPICODE" + string;
-    }
-
+function epify(str) {
+  if (str.startsWith("EPICODE")) {
+    return str;
+  } else {
+    return "EPICODE" + str;
+  }
 }
 
-document.getElementById("escinque").innerHTML = epify(); */
+console.log(epify(str));
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/*var num1 = 10
-var num2 = 3
-var num3 = 7
-
-
-function check3and7() {
-    return (num1 % num2 === 0 || num1 % num3 === 0)
+function check3and7(y) {
+  if (Math.abs(y) % 3 == 0 || Math.abs(y) % 7 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
-
-document.getElementById("esei").innerHTML = check3and7();*/
+console.log(check3and7(21));
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/*
-var string = "EPICODE"
+var string = "EPICODE";
 
-function reverseString() {
-    return string.split('').reverse().join('');
+function reverseString(string) {
+  return string.split("").reverse().join("");
 }
-
-document.getElementById("esette").innerHTML = reverseString();*/
-
+console.log(reverseString(string));
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-var string = "domani vado a lavoro"
+var string2 = "ciao sono marco e frequento epicode";
 
-function upperFirst () {
-    return string.split
+function upperFirst(string2) {
+  return string2.replace(/\b\w/g, function (match) {
+    return match.toUpperCase();
+  });
 }
+
+console.log(upperFirst(string2));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function cutString(str) {
+  if (str.lenght <= 2) {
+    return "";
+  }
+  return str.slice(1, -1);
+}
+
+console.log(cutString("ciao sono marco e frequento un corso epicode"));
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+var mioArray = [];
+
+function giveMeRandom(n) {
+  for (let i = 0; i < n; i++) {
+    randomNumber = Math.floor(Math.random() * 11);
+    mioArray.push(randomNumber);
+  }
+
+  return mioArray;
+}
+
+console.log(giveMeRandom(5));
